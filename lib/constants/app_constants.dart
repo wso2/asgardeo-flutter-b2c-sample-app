@@ -1,3 +1,5 @@
+import '../configs/configs.dart';
+
 class AppConstants {
 
   //API Params
@@ -69,4 +71,12 @@ class WarningMessages {
 
   static const String refreshTokenIssue = "Issue in renewing access token. User needs to login again.";
   static const String logOutIssue = "Issue in ending user session. User session may have already expired.";
+}
+
+class EndpointURLs {
+  static const discoveryUrl =
+      'https://api.asgardeo.io/t/$organizationName/oauth2/token/.well-known/openid-configuration';
+  static const userInfoEndpoint = 'https://api.asgardeo.io/t/$organizationName/oauth2/userinfo';
+  static const meEndpoint = 'https://api.asgardeo.io/t/$organizationName/scim2/Me';
+  static const signUpUrl = 'https://accounts.asgardeo.io/t/$organizationName/accountrecoveryendpoint/register.do?client_id=$clientId&sp=$spName&redirect_url=$redirectUrl';
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 import '../configs/configs.dart';
-import '../configs/end_point_urls.dart';
+import '../constants/app_constants.dart';
 import '../constants/strings.dart';
 
 class SignUpWebView extends StatelessWidget{
@@ -28,7 +28,7 @@ class SignUpWebView extends StatelessWidget{
           )
       )
       ..loadRequest(
-        Uri.parse(signUpUrl),
+        Uri.parse(EndpointURLs.signUpUrl),
       ))
     );
   }

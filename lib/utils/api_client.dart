@@ -5,7 +5,6 @@ import 'package:logger/logger.dart';
 import 'package:provider/provider.dart';
 
 import '../configs/configs.dart';
-import '../configs/end_point_urls.dart';
 import '../constants/app_constants.dart';
 import '../constants/strings.dart';
 import 'http_client.dart';
@@ -21,7 +20,7 @@ class APIClient{
 
   Future<void> getUserProfileData(BuildContext context) async {
 
-    final userInfo = await HTTPClient().httpGet(meEndpoint, context.read<UserSession>().accessToken);
+    final userInfo = await HTTPClient().httpGet(EndpointURLs.meEndpoint, context.read<UserSession>().accessToken);
 
     if (userInfo.statusCode == AppConstants.httpSuccessCode) {
       var profile = jsonDecode(userInfo.body);
@@ -43,7 +42,7 @@ class APIClient{
   Future<void> updateUserProfile(firstName, lastName, country, BuildContext context) async {
 
     Map data = Util().generateUpdateRequestBody(firstName, lastName, country);
-    final updatedInfo = await HTTPClient().httpPatch(meEndpoint, context.read<UserSession>().accessToken, data);
+    final updatedInfo = await HTTPClient().httpPatch(EndpointURLs.meEndpoint, context.read<UserSession>().accessToken, data);
 
     if (updatedInfo.statusCode == AppConstants.httpSuccessCode) {
       var profile = jsonDecode(updatedInfo.body);
@@ -96,7 +95,7 @@ class APIClient{
   }
 
   Future<void> getUserName(BuildContext context) async {
-    final userInfo = await HTTPClient().httpGet(meEndpoint, context.read<UserSession>().accessToken);
+    final userInfo = await HTTPClient().httpGet(EndpointURLs.meEndpoint, context.read<UserSession>().accessToken);
 
     if (userInfo.statusCode == AppConstants.httpSuccessCode) {
       var profile = jsonDecode(userInfo.body);

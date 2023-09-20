@@ -4,7 +4,6 @@ import 'package:logger/logger.dart';
 import 'package:provider/provider.dart';
 
 import '../configs/configs.dart';
-import '../configs/end_point_urls.dart';
 import '../constants/app_constants.dart';
 import '../providers/page.dart';
 import '../providers/user.dart';
@@ -21,7 +20,7 @@ loginFunction(BuildContext context) async{
       AuthorizationTokenRequest(
         clientId,
         redirectUrl,
-        discoveryUrl: discoveryUrl,
+        discoveryUrl: EndpointURLs.discoveryUrl,
         promptValues: [AuthConstants.login],
         scopes: [AuthConstants.openidScope, AuthConstants.profile, AuthConstants.address, AuthConstants.phone, AuthConstants.internalLoginScope],
       ),
@@ -43,7 +42,7 @@ renewAccessToken(BuildContext context) async {
             redirectUrl,
             grantType: GrantType.refreshToken,
             refreshToken: context.read<UserSession>().refreshToken,
-            discoveryUrl: discoveryUrl
+            discoveryUrl: EndpointURLs.discoveryUrl
         )
     );
     if(context.mounted) {
@@ -63,7 +62,7 @@ renewAccessToken(BuildContext context) async {
             .read<UserSession>()
             .idToken,
         postLogoutRedirectUrl: redirectUrl,
-        discoveryUrl: discoveryUrl,
+        discoveryUrl: EndpointURLs.discoveryUrl,
       ),
     );
 

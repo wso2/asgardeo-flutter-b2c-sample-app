@@ -1,12 +1,12 @@
-const String clientId = '<client_id>';
+const String clientId = 'TzpAhjAB5YHSHHfN0zP709FVgZoa';
 const String redirectUrl = 'wso2.asgardeo.flutterapp://login-callback';
-const String organizationName = '<organization-name>';
-const String spName = '<sp-name>';
-const String externalAPIEndpoint = '<external-api-url>';
+const String organizationName = 'dinithi';
+const String spName = 'asgardeo-flutterapp';
+const String externalAPIEndpoint = 'http://localhost:9090/albums';
 const String accessURL = 'wso2.asgardeo.flutterapp://signup';
 
 //optional
-const String defaultPhotoURL = '<default-photo-url>';
+const String defaultPhotoURL = 'https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI=';
 
 
 const String asgardeoLogo = "assets/images/asgardeo-logo-transparent.png";
