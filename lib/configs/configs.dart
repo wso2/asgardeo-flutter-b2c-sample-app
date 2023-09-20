@@ -11,7 +11,7 @@ const defaultPhotoURL = '<default-photo-url>';
 
 const asgardeoLogo = "assets/images/asgardeo-logo-transparent.png";
 const flutterLogo = "assets/images/flutter5786.jpg";
-const repoURL = "https://github.com/Dinithi-Hasanika/Asgardeo-Flutter-APP";
+const repoURL = "https://github.com/wso2/asgardeo-flutter-b2c-sample-app";
 const gitHubLogo = "assets/images/GitHub-Mark.png";
 
 //styles
