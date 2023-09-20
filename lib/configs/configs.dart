@@ -1,19 +1,19 @@
-const clientId = '<client_id>';
-const redirectUrl = 'wso2.asgardeo.flutterapp://login-callback';
-const organizationName = '<organization-name>';
-const spName = '<sp-name>';
-const externalAPIEndpoint = '<external-api-url>';
-const accessURL = 'wso2.asgardeo.flutterapp://signup';
+const String clientId = '<client_id>';
+const String redirectUrl = 'wso2.asgardeo.flutterapp://login-callback';
+const String organizationName = '<organization-name>';
+const String spName = '<sp-name>';
+const String externalAPIEndpoint = '<external-api-url>';
+const String accessURL = 'wso2.asgardeo.flutterapp://signup';
 
 //optional
-const defaultPhotoURL = '<default-photo-url>';
+const String defaultPhotoURL = '<default-photo-url>';
 
 
-const asgardeoLogo = "assets/images/asgardeo-logo-transparent.png";
-const flutterLogo = "assets/images/flutter5786.jpg";
-const repoURL = "https://github.com/wso2/asgardeo-flutter-b2c-sample-app";
-const gitHubLogo = "assets/images/GitHub-Mark.png";
+const String asgardeoLogo = "assets/images/asgardeo-logo-transparent.png";
+const String flutterLogo = "assets/images/flutter5786.jpg";
+const String repoURL = "https://github.com/wso2/asgardeo-flutter-b2c-sample-app";
+const String gitHubLogo = "assets/images/GitHub-Mark.png";
 
 //styles
-const primaryColor = 0xffFF7300;
-const buttonRadius = 50.0;
+const int primaryColor = 0xffFF7300;
+const double buttonRadius = 50.0;
