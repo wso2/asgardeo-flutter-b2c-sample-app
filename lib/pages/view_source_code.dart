@@ -3,7 +3,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 import '../configs/configs.dart' as configs;
 
-class ViewSourceCode extends StatelessWidget{
+class ViewSourceCode extends StatelessWidget {
   const ViewSourceCode({super.key});
 
   @override

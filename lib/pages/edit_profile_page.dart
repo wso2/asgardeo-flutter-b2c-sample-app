@@ -10,7 +10,7 @@ import '../constants/strings.dart';
 import '../providers/page.dart';
 import '../providers/user.dart';
 
-class EditProfilePage extends StatelessWidget{
+class EditProfilePage extends StatelessWidget {
 
    const EditProfilePage({super.key});
   @override

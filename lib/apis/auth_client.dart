@@ -12,9 +12,9 @@ import '../providers/user_session.dart';
 const FlutterAppAuth flutterAppAuth = FlutterAppAuth();
 final logger = Logger();
 
-class AuthClient{
+class AuthClient {
 
-loginFunction(BuildContext context) async{
+loginFunction(BuildContext context) async {
   try{
     final AuthorizationTokenResponse? result = await flutterAppAuth.authorizeAndExchangeCode(
       AuthorizationTokenRequest(
@@ -29,7 +29,7 @@ loginFunction(BuildContext context) async{
       context.read<CurrentPage>().setPageAndUserStatus(AppConstants.homePage, true);
       context.read<UserSession>().loginSuccessfulFunction(result?.accessToken, result?.idToken, result?.refreshToken);
     }
-  }catch(e){
+  }catch(e) {
     logger.e(e);
     context.read<CurrentPage>().setPageAndUserStatus(AppConstants.firstPage, false);
   }
@@ -54,7 +54,7 @@ renewAccessToken(BuildContext context) async {
   }
 }
 
-  logOutUser(BuildContext context) async{
+  logOutUser(BuildContext context) async {
   try {
     await flutterAppAuth.endSession(
       EndSessionRequest(

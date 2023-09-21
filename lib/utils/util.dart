@@ -1,7 +1,7 @@
 
-class Util{
+class Util {
 
-  Map generateUpdateRequestBody(firstName, lastName, country){
+  Map generateUpdateRequestBody(firstName, lastName, country) {
     Map data = {
       "schemas": [
         "urn:ietf:params:scim:api:messages:2.0:PatchOp"

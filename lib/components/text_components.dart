@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DisplayText extends StatelessWidget{
+class DisplayText extends StatelessWidget {
   final String content;
   final double gap;
 
@@ -23,7 +23,7 @@ class DisplayText extends StatelessWidget{
 
 }
 
-class DisplayLabel extends StatelessWidget{
+class DisplayLabel extends StatelessWidget {
   final String content;
   final double gap;
 
@@ -41,7 +41,7 @@ class DisplayLabel extends StatelessWidget{
 
 }
 
-class EditText extends StatelessWidget{
+class EditText extends StatelessWidget {
   final String label;
   final TextEditingController controller;
 

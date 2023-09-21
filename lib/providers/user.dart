@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../configs/configs.dart';
 import '../constants/app_constants.dart';
 
-class User with ChangeNotifier, DiagnosticableTreeMixin{
+class User with ChangeNotifier, DiagnosticableTreeMixin {
   late String _firstName = '';
   late String _lastName = '';
   late String _dateOfBirth = '';
@@ -26,7 +26,7 @@ class User with ChangeNotifier, DiagnosticableTreeMixin{
 
   String get userName => _userName;
 
-  void setUserDetails(profile){
+  void setUserDetails(profile) {
     _firstName = profile[AppConstants.name][AppConstants.givenName] ?? '';
     _lastName = profile[AppConstants.name][AppConstants.familyName] ?? '';
     _dateOfBirth = profile[AppConstants.wso2Schema][AppConstants.dob] ?? '';
@@ -36,12 +36,12 @@ class User with ChangeNotifier, DiagnosticableTreeMixin{
     notifyListeners();
   }
 
-  void setUserName(profile){
+  void setUserName(profile) {
     _userName = profile[AppConstants.userName].toString().split(AppConstants.domainSplit)[1];
     notifyListeners();
   }
 
-  void clearUserData(){
+  void clearUserData() {
     _userName = "";
     notifyListeners();
   }

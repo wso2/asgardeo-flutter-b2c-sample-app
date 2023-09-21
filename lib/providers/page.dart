@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../constants/app_constants.dart';
 import '../constants/strings.dart';
 
-class CurrentPage with ChangeNotifier, DiagnosticableTreeMixin{
+class CurrentPage with ChangeNotifier, DiagnosticableTreeMixin {
   late int _pageIndex = AppConstants.firstPage;
   late bool _isUserLoggedIn = false;
   late String _apiData = Strings.noExternalAPIData;
@@ -14,18 +14,18 @@ class CurrentPage with ChangeNotifier, DiagnosticableTreeMixin{
 
   String get apiData => _apiData;
 
-  void setPageIndex(pageIndex){
+  void setPageIndex(pageIndex) {
     _pageIndex = pageIndex;
     notifyListeners();
   }
 
-  void setPageAndUserStatus(pageIndex, isUserLoggedIn){
+  void setPageAndUserStatus(pageIndex, isUserLoggedIn) {
     _isUserLoggedIn = isUserLoggedIn;
     _pageIndex = pageIndex;
     notifyListeners();
   }
 
-  void setExternalAPIPage(pageIndex, apiData){
+  void setExternalAPIPage(pageIndex, apiData) {
     _pageIndex = pageIndex;
     _apiData = apiData;
     notifyListeners();

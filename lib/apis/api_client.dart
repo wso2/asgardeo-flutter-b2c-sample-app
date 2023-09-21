@@ -16,7 +16,7 @@ import '../utils/util.dart';
 
 final logger = Logger();
 
-class APIClient{
+class APIClient {
 
   Future<void> getUserProfileData(BuildContext context) async {
 

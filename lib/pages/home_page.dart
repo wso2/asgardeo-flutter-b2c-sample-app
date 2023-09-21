@@ -8,7 +8,7 @@ import '../configs/configs.dart' as configs;
 import '../constants/strings.dart';
 import '../providers/user.dart';
 
-class HomePage extends StatefulWidget{
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override

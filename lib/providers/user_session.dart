@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 
 import '../constants/app_constants.dart';
 
-class UserSession with ChangeNotifier, DiagnosticableTreeMixin{
+class UserSession with ChangeNotifier, DiagnosticableTreeMixin {
   late String _accessToken = '';
   late String _idToken = '';
   late String _refreshToken = '';
@@ -13,7 +13,7 @@ class UserSession with ChangeNotifier, DiagnosticableTreeMixin{
 
   String get refreshToken => _refreshToken;
 
-  void loginSuccessfulFunction(accessToken, idToken, refreshToken){
+  void loginSuccessfulFunction(accessToken, idToken, refreshToken) {
     _accessToken = accessToken;
     _idToken = idToken;
     _refreshToken = refreshToken;

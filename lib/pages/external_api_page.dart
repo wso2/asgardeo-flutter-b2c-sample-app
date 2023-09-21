@@ -5,7 +5,7 @@ import '../constants/app_constants.dart';
 import '../constants/strings.dart';
 import '../providers/page.dart';
 
-class ExternalAPIDataPage extends StatelessWidget{
+class ExternalAPIDataPage extends StatelessWidget {
 
   const ExternalAPIDataPage({super.key});
 

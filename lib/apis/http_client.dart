@@ -14,7 +14,7 @@ class HTTPClient {
     return result;
   }
 
-  Future<http.Response> httpPatch(String url, String? accessToken, data){
+  Future<http.Response> httpPatch(String url, String? accessToken, data) {
     final result = http.patch(
       Uri.parse(url),
         headers: {APIClientConstants.authorization: '${APIClientConstants.bearer} $accessToken',

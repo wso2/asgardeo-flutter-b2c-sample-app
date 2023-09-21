@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../constants/strings.dart';
 
-class License extends StatelessWidget{
+class License extends StatelessWidget {
   final double gap;
   const License(this.gap, {super.key});
 
