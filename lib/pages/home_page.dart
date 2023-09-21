@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../apis/api_client.dart';
+import '../apis/auth_client.dart';
 import '../components/license.dart';
 import '../configs/configs.dart' as configs;
 import '../constants/strings.dart';
 import '../providers/user.dart';
-import '../utils/api_client.dart';
-import '../utils/auth_client.dart';
 
 class HomePage extends StatefulWidget{
   const HomePage({super.key});

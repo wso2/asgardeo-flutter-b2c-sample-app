@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../apis/api_client.dart';
 import '../components/license.dart';
 import '../components/text_components.dart';
 import '../configs/configs.dart' as configs;
@@ -8,7 +9,6 @@ import '../constants/app_constants.dart';
 import '../constants/strings.dart';
 import '../providers/page.dart';
 import '../providers/user.dart';
-import '../utils/api_client.dart';
 
 class EditProfilePage extends StatelessWidget{
 

@@ -11,7 +11,7 @@ import 'http_client.dart';
 import '../providers/page.dart';
 import '../providers/user.dart';
 import '../providers/user_session.dart';
-import '../utils/auth_client.dart';
+import 'auth_client.dart';
 import '../utils/util.dart';
 
 final logger = Logger();
